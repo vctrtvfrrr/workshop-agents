@@ -15,7 +15,7 @@ Exercício prático em que cada participante cria, no Open WebUI, um agent que c
 
 ## Site do participante
 
-O workflow `.github/workflows/pages.yml` publica a SPA de `site/` no GitHub Pages a cada push em `main` que altere `site/` ou `participante/`. A SPA lê os arquivos Markdown de `participante/`, então basta editar esses arquivos para atualizar o site.
+O workflow `.github/workflows/pages.yml` publica a SPA de `site/` no GitHub Pages a cada push em `master` que altere `site/` ou `participante/`. A SPA lê os arquivos Markdown de `participante/`, então basta editar esses arquivos para atualizar o site.
 
 Para visualizar localmente:
 
