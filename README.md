@@ -10,7 +10,18 @@ Exercício prático em que cada participante cria, no Open WebUI, um agent que c
 | `openwebui/tools/` | Os 3 kits de tools para o Open WebUI |
 | `openwebui/functions/` | Filtro que acrescenta o aviso de ambiente simulado em cada resposta |
 | `openwebui/skills/` | 4 skills de exemplo prontas para importar |
+| `site/` | SPA com as instruções do participante, publicada no GitHub Pages |
 | `tests/` | Testes automatizados das tools |
+
+## Site do participante
+
+O workflow `.github/workflows/pages.yml` publica a SPA de `site/` no GitHub Pages a cada push em `main` que altere `site/` ou `participante/`. A SPA lê os arquivos Markdown de `participante/`, então basta editar esses arquivos para atualizar o site.
+
+Para visualizar localmente:
+
+```powershell
+New-Item -ItemType Directory -Force _site/content | Out-Null; Copy-Item -Recurse -Force site/* _site/; Copy-Item participante/*.md _site/content/; python -m http.server 8765 -d _site
+```
 
 ## Cadastro no Open WebUI
 

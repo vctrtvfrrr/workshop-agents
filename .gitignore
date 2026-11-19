@@ -1,2 +1,4 @@
 instrutor/
 __pycache__/
+_site/
+.claude/

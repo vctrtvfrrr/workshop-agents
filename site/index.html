@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detetive de Golpes</title>
+  <meta name="description" content="Instruções do exercício prático do workshop Agents & Skills.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕵️</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#/guia">
+        <span class="brand-icon" aria-hidden="true">🕵️</span>
+        <span>
+          <strong>Detetive de Golpes</strong>
+          <small>Workshop Agents &amp; Skills</small>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="Seções">
+        <a href="#/guia" data-route="guia">Guia</a>
+        <a href="#/prompt" data-route="prompt">Esqueleto do prompt</a>
+        <a href="#/mensagens" data-route="mensagens">Mensagens</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="notice">
+    <div class="container">
+      ⚠️ <strong>Ambiente simulado.</strong> Use apenas as mensagens M1 a M8. As tools consultam uma base fictícia e não verificam mensagens reais.
+    </div>
+  </div>
+
+  <main class="container layout">
+    <aside class="toc" aria-label="Nesta página">
+      <p class="toc-title">Nesta página</p>
+      <ul id="toc"></ul>
+    </aside>
+    <article id="content" class="content" aria-live="polite">
+      <p class="loading">Carregando…</p>
+    </article>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
